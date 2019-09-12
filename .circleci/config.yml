@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-node
+    working_directory: ~/web
+    steps:
+      - checkout
+      - run: bundle install
+      - run: sudo npm install -g staticrypt
+      - run: bash automated_build.sh
+
