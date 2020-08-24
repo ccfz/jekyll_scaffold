@@ -1,0 +1,64 @@
+#contact {
+  h1 {
+    text-align: center;
+  }
+}
+.form{
+	font-size: 1.2rem;
+}
+.form label{
+	display: block;
+  margin-bottom: 1rem;
+
+  span:first-of-type {
+    margin-bottom: 0.2rem;
+  }
+}
+.form label > span{
+	width: 100px;
+	font-weight: normal;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form span.required{
+	color: #FE5000;
+}
+
+.form input.input-field, .form .select-field{
+	width: 100%;
+}
+.form input.input-field,
+.form .tel-number-field,
+.form .textarea-field,
+ .form .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	padding: 7px;
+	outline: none;
+}
+.form .input-field:focus,
+.form .tel-number-field:focus,
+.form .textarea-field:focus,
+.form .select-field:focus{
+	border: 1px solid #FE5000;
+}
+.form .textarea-field{
+	height: 7rem;
+	width: 100%;
+}
+.form input[type=submit],
+.form input[type=button]{
+  border: 1px solid white;
+  padding: 8px 15px 8px 15px;
+  background-color: transparent;
+  color: white;
+}
+.form input[type=submit]:hover,
+.form input[type=button]:hover{
+  box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+}
